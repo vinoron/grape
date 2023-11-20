@@ -29,10 +29,13 @@
 
       function handleTouchStart(evt) {                                
         console.log("start");
+        // evt.stopPropagation(); 
       };                                                
                                                                          
       function handleTouchMove(evt) {
-        evt.stopPropagation(); 
+        evt.preventDefault();
+        return false;
+        // evt.stopPropagation(); 
       };
       document.addEventListener('touchstart', handleTouchStart, false);        
       document.addEventListener('touchmove', handleTouchMove, false);
