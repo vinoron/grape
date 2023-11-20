@@ -38,8 +38,8 @@
         evt.stopPropagation(); 
         return false;
       };
-      document.addEventListener('touchstart', handleTouchStart, false);        
-      document.addEventListener('touchmove', handleTouchMove, false);
+      document.getElementById('root').addEventListener('touchstart', handleTouchStart, false);        
+      document.getElementById('root').addEventListener('touchmove', handleTouchMove, false);
 
 
     </script>
